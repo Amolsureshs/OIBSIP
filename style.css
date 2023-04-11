@@ -1,139 +1,107 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
-
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
 .container{
-    max-width: 80vw;
-    font-family: 'Ubuntu', sans-serif;
-}
-
-.navbar{
-    display: flex;
-    height: 67px;
-}
-.navbar li{
-    list-style: none;
-    margin: 0 12px;
-}
-
-.topleft{
-    width: 50%;
-}
-
-.topright{ 
-    width: 50%;
-}
-
-.section1{
-   max-height: 100vh; 
-   color: #d36c0c;
-}
-
-.section1 h1{
-    color: #4f16c9;
-    font-size: 2rem;
-}
-
-.logo{
-    font-size: 1.3rem;
-}
-
-.dumbellimg{
-    width: 289px;
-}
-
-.topright .gymimg{
-    width: 466px;
-}
-
-.section2{
-    padding: 73px;
-}
-
-.section2 h1{
-    font-size: 2.3rem;
-}
-
-.section2 p{
-    padding: 0 8vw;
-    text-align: center;
-}
-
-.box{
-    padding: 8px 0;
-    margin: 12px 22px;
-    min-width: 20vw;
-    border: 2px solid rgb(98, 120, 16);
+    max-width: 450px;
+    background: #678c03;
     border-radius: 8px;
-    text-align: center;
+    box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.4);
+    font-family: sans-serif;
+    padding: 20px;
 }
 
-.box h2{
-    font-size: 2rem;
-    padding: 15px 0;
-}
-
-.highlighted{
-    font-size: 1.2rem;
-    font-weight: bolder;
-}
-
-.box ul{
-    list-style-type: none;
-}
-
-.box ul li{
-   margin: 12px 2px;
-}
-
-.plantable{
+.title{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap-reverse;
+    gap: 10px;
 }
 
-.section3 table{
-    width: 100%;
-    margin-bottom: 140px;
-    margin-top: 20px;
-    border-collapse: collapse;
+.Temperature-icon{
+    font-size: 45px;
+    color: #fff;
 }
 
-.section3 table th{ 
-    width: 23vw; 
-    border-bottom: 2px solid black;
-    padding: 15px 0;
-} 
-
-.section3 table td{   
-    border-bottom: 2px solid black; 
-} 
- 
-
-.section3 h1{
-    font-size: 2.3rem;
+h1{
+    color: #fff;
+    letter-spacing: 1.2px;
+    font-size: 30px;
 }
 
-.section3{
-    padding: 73px;
-}
-
-footer{
-    padding: 23px;
-    text-align: center;
-}
-.buttons{
+#celsius, #fahrenheit, #kelvin{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 12px;
+    margin-top: 25px;
 }
 
-.deal{
-    font-size: 1.2rem;
-    font-weight: bolder;
-    margin: 12px 0;
+input{
+    flex: 5;
+    height: 60px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    border: none;
+    outline: none;
+    border-radius: 8px 0 0 8px;
+    padding: 0 10px;
+}
+
+
+/* for chrome, safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
+/* for Mozila firefox */
+input{
+    -moz-appearance: textfield;
+}
+
+
+.icon{
+    flex: 1;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 5px;
+    text-align: center;
+    font-size: 30px;
+    background: #425d77;
+    color: #fff;
+    border-radius: 0 8px 8px 0;
+}
+
+
+.button{
+    margin-top: 25px;
+    text-align: center;
+}
+
+
+.button button{
+    border: none;
+    outline: none;
+    padding: 10px 30px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button button:hover{
+    background: #000;
+    color: #fff;
 }
